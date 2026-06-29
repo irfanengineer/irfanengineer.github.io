@@ -1,84 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Irfan Ahmed | AI & Automation Engineer</title>
+<title>Irfan Ahmed | Engineer Portfolio</title>
 
 <style>
 body {
   margin: 0;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   background: #0f172a;
-  color: white;
+  color: #e2e8f0;
 }
 
-/* Header */
 header {
+  background: #020617;
   text-align: center;
   padding: 60px;
-  background: #020617;
-  animation: fadeIn 1s;
 }
 
-/* Sections */
 section {
   max-width: 900px;
   margin: auto;
   padding: 40px;
-  animation: fadeIn 1s;
 }
 
-/* Cards */
+h2 {
+  border-bottom: 2px solid #38bdf8;
+  padding-bottom: 5px;
+}
+
 .card {
   background: #1e293b;
   padding: 20px;
   margin: 15px 0;
   border-radius: 10px;
-  transition: 0.3s;
 }
 
-.card:hover {
-  transform: scale(1.05);
-}
-
-/* Buttons */
 .button {
-  padding: 10px 15px;
-  background: cyan;
-  color: black;
-  border-radius: 6px;
-  text-decoration: none;
   display: inline-block;
+  padding: 10px 15px;
   margin-top: 10px;
+  background: #38bdf8;
+  color: black;
+  text-decoration: none;
+  border-radius: 6px;
 }
 
-/* Chatbox */
-#chatbox {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  width: 300px;
-  background: #1e293b;
-  border-radius: 10px;
-}
-
-#messages {
-  height: 200px;
-  overflow-y: auto;
-  padding: 10px;
-}
-
-input {
-  width: 100%;
-  padding: 10px;
-  border: none;
-}
-
-@keyframes fadeIn {
-  from {opacity:0;}
-  to {opacity:1;}
-}
 </style>
 </head>
 
@@ -86,96 +53,87 @@ input {
 
 <header>
 <h1>Irfan Ahmed</h1>
-<p>AI & Automation Engineer | PhD in Artificial Intelligence</p>
+<p>IT, Automation & Electrical Engineer | SCADA | Systems | Python</p>
 </header>
 
 <section>
-<h2>🚀 Featured Work</h2>
-
-<div class="card">
-<h3>Automation & Monitoring Systems</h3>
+<h2>Professional Summary</h2>
 <p>
-Built Python-based automation systems for data processing, workflows, and reporting to improve efficiency and reliability.
+Field-focused Electrical and IT Engineer with 10+ years of experience supporting electrical, IT, and control systems in real-world environments.
+Specialized in SCADA, system monitoring, troubleshooting, and automation with strong focus on reliability and uptime.
 </p>
-</div>
-
 </section>
 
 <section>
-<h2>💻 Projects</h2>
+<h2>Core Skills</h2>
+<div class="card">
+<p>
+• SCADA & Industrial Control Systems<br>
+• IT Field Support & Troubleshooting<br>
+• System Monitoring & Incident Response<br>
+• Python, Java, Automation Tools<br>
+• Electrical Power Systems (LV/MV)<br>
+• Preventive Maintenance & Reliability Engineering<br>
+</p>
+</div>
+</section>
+
+<section>
+<h2>Highlighted Projects</h2>
 
 <div class="card">
-<h3>AI Chatbot</h3>
-<p>Conversational AI project using NLP techniques.</p>
-<a href="https://github.com/IrfanAhmed1989" class="button">View</a>
+<h3>Automation Toolkit</h3>
+<p>Developed Python tools for data processing, reporting, and automation workflows.</p>
+<a href="https://github.com/IrfanAhmed1989" class="button">View GitHub</a>
 </div>
 
 <div class="card">
 <h3>Prime Checker (Java)</h3>
-<p>Converted and optimized C++ logic into Java with full validation.</p>
+<p>Developed Java-based system by converting and validating C++ logic.</p>
 <a href="https://github.com/IrfanAhmed1989/CSC6302_Module2_PrimeCheck_Java" class="button">View</a>
 </div>
 
 <div class="card">
-<h3>Factorial System</h3>
-<p>Converted Python logic into Java with accurate computation.</p>
+<h3>Factorial Program</h3>
+<p>Implemented mathematical computation system in Java from Python logic.</p>
 <a href="https://github.com/IrfanAhmed1989/CSC6302_Module1_Factorial_Java" class="button">View</a>
-</div>
-
-<div class="card">
-<h3>Automation Toolkit</h3>
-<p>Python scripts for automation, reporting, and workflows.</p>
-<a href="https://github.com/IrfanAhmed1989" class="button">GitHub</a>
 </div>
 
 </section>
 
 <section>
-<h2>🧠 Skills</h2>
+<h2>Professional Experience</h2>
+
+<div class="card">
+<h3>Operations & Maintenance Engineer — Atlanta Airport</h3>
+<p>SCADA systems, preventive maintenance, downtime analysis, system troubleshooting, and reliability improvements.</p>
+</div>
+
+<div class="card">
+<h3>Electrical Engineer — UAE Experience</h3>
+<p>Fire alarm systems, electrical infrastructure, testing, commissioning, and site operations.</p>
+</div>
+
+</section>
+
+<section>
+<h2>Education</h2>
 <p>
-Python • Java • Machine Learning • AI • Automation • SCADA • Systems Engineering
+M.S. Computer Science (In Progress)<br>
+B.S. Electrical Engineering
 </p>
 </section>
 
 <section>
-<h2>📄 Resume</h2>
+<h2>Resume</h2>
 <a href="resume.pdf" class="button">Download Resume</a>
 </section>
 
 <section>
-<h2>🔗 Links</h2>
+<h2>Links</h2>
 <a href="https://github.com/IrfanAhmed1989" class="button">GitHub</a>
 <a href="https://www.linkedin.com/in/irfan-a-a68bb6145" class="button">LinkedIn</a>
 </section>
-
-<!-- Chatbot -->
-<div id="chatbox">
-<div id="messages"></div>
-<input id="input" placeholder="Ask about me..." onkeypress="send(event)">
-</div>
-
-<script>
-function send(e) {
-  if (e.key === "Enter") {
-    let input = document.getElementById("input");
-    let msg = input.value;
-    let box = document.getElementById("messages");
-
-    box.innerHTML += "<p><b>You:</b> " + msg + "</p>";
-
-    let reply = "Hi, I am Irfan's AI assistant 🤖";
-
-    if (msg.toLowerCase().includes("skills")) reply = "Python, Java, AI, ML";
-    if (msg.toLowerCase().includes("projects")) reply = "Check projects above";
-    if (msg.toLowerCase().includes("contact")) reply = "Use LinkedIn";
-
-    box.innerHTML += "<p><b>Bot:</b> " + reply + "</p>";
-
-    input.value = "";
-    box.scrollTop = box.scrollHeight;
-  }
-}
-</script>
 
 </body>
 </html>
