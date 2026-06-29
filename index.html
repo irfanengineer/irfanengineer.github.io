@@ -1,147 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Irfan Ahmed | AI Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Irfan Ahmed | AI Portfolio</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #0f172a;
-      color: #e2e8f0;
-    }
+<style>
+:root {
+  --bg: #0f172a;
+  --text: #e2e8f0;
+  --card: #1e293b;
+}
 
-    header {
-      background: #020617;
-      padding: 30px;
-      text-align: center;
-    }
+body.light {
+  --bg: #ffffff;
+  --text: #000000;
+  --card: #f1f5f9;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
+body {
+  margin: 0;
+  font-family: Arial;
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.4s;
+}
 
-    header p {
-      color: #38bdf8;
-      font-size: 1.2rem;
-    }
+header {
+  text-align: center;
+  padding: 40px;
+  animation: fadeIn 1s ease-in;
+}
 
-    nav {
-      margin-top: 15px;
-    }
+nav a {
+  margin: 10px;
+  color: cyan;
+  text-decoration: none;
+}
 
-    nav a {
-      margin: 0 15px;
-      color: #38bdf8;
-      text-decoration: none;
-      font-weight: bold;
-    }
+section {
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+}
 
-    section {
-      padding: 40px;
-      max-width: 900px;
-      margin: auto;
-    }
+.card {
+  background: var(--card);
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
 
-    .card {
-      background: #1e293b;
-      padding: 20px;
-      border-radius: 12px;
-      margin-bottom: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.4);
-    }
+.card:hover {
+  transform: scale(1.05);
+}
 
-    h2 {
-      border-bottom: 2px solid #38bdf8;
-      padding-bottom: 5px;
-    }
+.button {
+  padding: 10px;
+  background: cyan;
+  color: black;
+  border-radius: 6px;
+  text-decoration: none;
+}
 
-    a.button {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 15px;
-      background: #38bdf8;
-      color: black;
-      border-radius: 6px;
-      text-decoration: none;
-    }
+@keyframes fadeIn {
+  from {opacity:0; transform: translateY(20px);}
+  to {opacity:1;}
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #020617;
-      font-size: 0.9rem;
-    }
-  </style>
+/* Chatbot */
+#chatbox {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 300px;
+  background: var(--card);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#messages {
+  height: 200px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+input {
+  width: 100%;
+  border: none;
+  padding: 10px;
+}
+
+</style>
 </head>
 
 <body>
 
 <header>
-  <h1>Irfan Ahmed</h1>
-  <p>PhD in Artificial Intelligence | Machine Learning Engineer</p>
+<h1>Irfan Ahmed</h1>
+<p>AI Engineer | PhD in Artificial Intelligence</p>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#links">Links</a>
-  </nav>
+<button onclick="toggleMode()">Toggle Dark/Light</button>
 </header>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    I am a PhD student in Artificial Intelligence focused on building scalable machine learning and deep learning systems. 
-    My interests include NLP, deep learning, and real-world AI applications.
-  </p>
-</section>
+<section>
+<h2>Projects</h2>
 
-<section id="projects">
-  <h2>Projects</h2>
+<div class="card">
+<h3>AI Chatbot</h3>
+<p>Built using NLP & transformers</p>
+<a href="https://github.com/YOUR_USERNAME" class="button">Code</a>
+</div>
 
-  <div class="card">
-    <h3>AI Chatbot</h3>
-    <p>Built a transformer-based chatbot using PyTorch for intelligent conversation systems.</p>
-    <a class="button" href="https://github.com/YOUR_USERNAME" target="_blank">View Code</a>
-  </div>
-
-  <div class="card">
-    <h3>Fraud Detection System</h3>
-    <p>Machine learning model to detect financial fraud with high accuracy.</p>
-    <a class="button" href="https://github.com/YOUR_USERNAME" target="_blank">View Code</a>
-  </div>
-
-  <div class="card">
-    <h3>Recommendation System</h3>
-    <p>Built a personalized recommendation engine using collaborative filtering.</p>
-    <a class="button" href="https://github.com/YOUR_USERNAME" target="_blank">View Code</a>
-  </div>
+<div class="card">
+<h3>Fraud Detection</h3>
+<p>Machine learning fraud detection system</p>
+</div>
 
 </section>
 
-<section id="skills">
-  <h2>Skills</h2>
-  <p>
-    Python • Java • Machine Learning • Deep Learning • PyTorch • TensorFlow • NLP • Data Analysis • Git
-  </p>
+<section>
+<h2>Links</h2>
+<a href="https://github.com/YOUR_USERNAME" class="button">GitHub</a>
+<a href="https://linkedin.com/in/YOUR_PROFILE" class="button">LinkedIn</a>
 </section>
 
-<section id="links">
-  <h2>Links</h2>
-  <p>
-    <a class="button" href="https://github.com/YOUR_USERNAME" target="_blank">GitHub</a>
-    <a class="button" href="https://linkedin.com/in/YOUR_PROFILE" target="_blank">LinkedIn</a>
-    <a class="button" href="resume.pdf" target="_blank">Resume</a>
-  </p>
-</section>
+<!-- Chatbot UI -->
+<div id="chatbox">
+<div id="messages"></div>
+<input id="input" placeholder="Ask about me..." onkeypress="send(event)">
+</div>
 
-<footer>
-  <p>© 2026 Irfan Ahmed | AI Portfolio</p>
-</footer>
+<script>
+function toggleMode() {
+  document.body.classList.toggle("light");
+}
+
+function send(e) {
+  if (e.key === "Enter") {
+    let input = document.getElementById("input");
+    let msg = input.value;
+    let box = document.getElementById("messages");
+
+    box.innerHTML += "<p><b>You:</b> " + msg + "</p>";
+
+    let reply = "I'm Irfan's AI portfolio assistant 🤖";
+
+    if (msg.toLowerCase().includes("skills")) reply = "Python, Java, ML, AI";
+    if (msg.toLowerCase().includes("projects")) reply = "Check projects above!";
+    if (msg.toLowerCase().includes("contact")) reply = "Reach out via LinkedIn";
+
+    box.innerHTML += "<p><b>Bot:</b> " + reply + "</p>";
+    input.value = "";
+    box.scrollTop = box.scrollHeight;
+  }
+}
+</script>
 
 </body>
 </html>
