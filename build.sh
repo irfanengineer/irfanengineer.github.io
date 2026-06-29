@@ -1,7 +1,12 @@
+#!/bin/bash
+
+source data.txt
+
+cat > index.html <<EOL
 <!DOCTYPE html>
 <html>
 <head>
-<title> | Portfolio</title>
+<title>$NAME | Portfolio</title>
 <style>
 body {font-family: Arial; background:#0f172a; color:white;}
 section {max-width:900px; margin:auto; padding:30px;}
@@ -13,13 +18,13 @@ section {max-width:900px; margin:auto; padding:30px;}
 <body>
 
 <section>
-<h1></h1>
-<p></p>
+<h1>$NAME</h1>
+<p>$TITLE</p>
 
 <h2>Links</h2>
-<a href="https://github.com/IrfanAhmed1989" class="button">GitHub</a>
-<a href="https://www.linkedin.com/in/irfan-a-a68bb6145" class="button">LinkedIn</a>
-<p>Email: engineerirfan21@gmail.com</p>
+<a href="$GITHUB" class="button">GitHub</a>
+<a href="$LINKEDIN" class="button">LinkedIn</a>
+<p>Email: $EMAIL</p>
 
 <h2>Projects</h2>
 <div class="card">Automation Toolkit (Python)</div>
@@ -32,3 +37,6 @@ section {max-width:900px; margin:auto; padding:30px;}
 
 </body>
 </html>
+EOL
+
+echo "✅ Website built successfully"
