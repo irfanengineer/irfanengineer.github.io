@@ -1,162 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Irfan Ahmed | AI Portfolio</title>
-
+<title>Irfan Ahmed | AI Engineer</title>
 <style>
-:root {
-  --bg: #0f172a;
-  --text: #e2e8f0;
-  --card: #1e293b;
-}
-
-body.light {
-  --bg: #ffffff;
-  --text: #000000;
-  --card: #f1f5f9;
-}
-
 body {
-  margin: 0;
   font-family: Arial;
-  background: var(--bg);
-  color: var(--text);
-  transition: 0.4s;
+  margin: 0;
+  background: #0f172a;
+  color: white;
 }
-
 header {
   text-align: center;
   padding: 40px;
-  animation: fadeIn 1s ease-in;
 }
-
-nav a {
-  margin: 10px;
-  color: cyan;
-  text-decoration: none;
-}
-
 section {
-  padding: 40px;
   max-width: 900px;
   margin: auto;
+  padding: 30px;
 }
-
 .card {
-  background: var(--card);
+  background: #1e293b;
   padding: 20px;
   margin: 15px 0;
   border-radius: 10px;
-  transition: transform 0.3s;
 }
-
-.card:hover {
-  transform: scale(1.05);
+a {
+  color: cyan;
 }
-
-.button {
-  padding: 10px;
-  background: cyan;
-  color: black;
-  border-radius: 6px;
-  text-decoration: none;
-}
-
-@keyframes fadeIn {
-  from {opacity:0; transform: translateY(20px);}
-  to {opacity:1;}
-}
-
-/* Chatbot */
-#chatbox {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  width: 300px;
-  background: var(--card);
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-#messages {
-  height: 200px;
-  overflow-y: auto;
-  padding: 10px;
-}
-
-input {
-  width: 100%;
-  border: none;
-  padding: 10px;
-}
-
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>Irfan Ahmed</h1>
-<p>AI Engineer | PhD in Artificial Intelligence</p>
-
-<button onclick="toggleMode()">Toggle Dark/Light</button>
+  <h1>Irfan Ahmed</h1>
+  <p>PhD in Artificial Intelligence | Machine Learning Engineer</p>
 </header>
+
+<section>
+<h2>About Me</h2>
+<p>
+I am a PhD student in Artificial Intelligence focused on building real-world machine learning systems.  
+My interests include deep learning, NLP, and scalable AI applications.
+</p>
+</section>
 
 <section>
 <h2>Projects</h2>
 
 <div class="card">
-<h3>AI Chatbot</h3>
-<p>Built using NLP & transformers</p>
-<a href="https://github.com/YOUR_USERNAME" class="button">Code</a>
+<h3>Java Prime Checker</h3>
+<p>Converted C++ program into Java with full behavior accuracy and testing.</p>
+<a href="https://github.com/IrfanAhmed1989/CSC6302_Module2_PrimeCheck_Java">View Code</a>
 </div>
 
 <div class="card">
-<h3>Fraud Detection</h3>
-<p>Machine learning fraud detection system</p>
+<h3>Factorial in Java</h3>
+<p>Converted Python factorial logic into Java for academic project verification.</p>
+<a href="https://github.com/IrfanAhmed1989/CSC6302_Module1_Factorial_Java">View Code</a>
+</div>
+
+<div class="card">
+<h3>Python Automation Tools</h3>
+<p>Built scripts for file handling, reporting, and automation.</p>
+<a href="https://github.com/IrfanAhmed1989">View GitHub</a>
 </div>
 
 </section>
 
 <section>
-<h2>Links</h2>
-<a href="https://github.com/YOUR_USERNAME" class="button">GitHub</a>
-<a href="https://linkedin.com/in/YOUR_PROFILE" class="button">LinkedIn</a>
+<h2>Skills</h2>
+<p>
+Python • Java • Machine Learning • Git • Data Processing • Automation
+</p>
 </section>
 
-<!-- Chatbot UI -->
-<div id="chatbox">
-<div id="messages"></div>
-<input id="input" placeholder="Ask about me..." onkeypress="send(event)">
-</div>
-
-<script>
-function toggleMode() {
-  document.body.classList.toggle("light");
-}
-
-function send(e) {
-  if (e.key === "Enter") {
-    let input = document.getElementById("input");
-    let msg = input.value;
-    let box = document.getElementById("messages");
-
-    box.innerHTML += "<p><b>You:</b> " + msg + "</p>";
-
-    let reply = "I'm Irfan's AI portfolio assistant 🤖";
-
-    if (msg.toLowerCase().includes("skills")) reply = "Python, Java, ML, AI";
-    if (msg.toLowerCase().includes("projects")) reply = "Check projects above!";
-    if (msg.toLowerCase().includes("contact")) reply = "Reach out via LinkedIn";
-
-    box.innerHTML += "<p><b>Bot:</b> " + reply + "</p>";
-    input.value = "";
-    box.scrollTop = box.scrollHeight;
-  }
-}
-</script>
+<section>
+<h2>Links</h2>
+<p>
+<a href="https://github.com/IrfanAhmed1989">GitHub</a><br>
+<a href="https://linkedin.com">LinkedIn</a><br>
+<a href="mailto:engineerirfan21@gmail.com">Email</a>
+</p>
+</section>
 
 </body>
 </html>
