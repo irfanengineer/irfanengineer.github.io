@@ -1,0 +1,28 @@
+PROFILE PHOTO
+profile.jpg
+
+PROJECT IMAGES
+assets/gallery/project1.png
+assets/gallery/project2.png
+assets/gallery/project3.png
+
+PORTFOLIO
+portfolio/
+
+SHOWCASES
+SCADA
+IT SYSTEMS
+AUTOMATION
+AI
+JAVA
+PYTHON
+DATABASE
+AIRPORT SYSTEMS
+ELECTRICAL ENGINEERING
+
+LINKS
+GitHub
+LinkedIn
+Academic Portfolio
+Resume
+
