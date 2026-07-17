@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: irfanengineer/irfanengineer.github.io
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "Website Content"
+    files:
+      - label: "Homepage"
+        name: "homepage"
+        file: "index.html"
+        fields:
+          - { label: "Content", name: "body", widget: "text" }
